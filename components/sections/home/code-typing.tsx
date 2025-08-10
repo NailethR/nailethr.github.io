@@ -1,7 +1,7 @@
 'use client';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Highlight, themes } from 'prism-react-renderer';
+import { useEffect, useState } from 'react';
 
 const defaultProps = {
   theme: themes.vsDark,
@@ -21,7 +21,7 @@ function createAmazingWebApp() {
   return {
     message: "Let's work together!",
     services: ["Web Apps", "AI Features"],
-    contact: "Scroll down to connect →"
+    projects: "Scroll down to explore →"
   };
 };`;
 

@@ -1,16 +1,15 @@
 'use client';
 
+import TextAnimation from '@/components/layout/text-animation';
 import { Button } from '@/components/ui/button';
+import data from '@/data';
+import useCurSection from '@/hooks/use-cur-section';
+import grid from '@/public/svgs/grid.svg';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
-import data from '@/data';
-import Link from 'next/link';
-import Image from 'next/image';
 import CodeTyping from './code-typing';
-import grid from '@/public/svgs/grid.svg';
-import TextAnimation from '@/components/layout/text-animation';
-import useCurSection from '@/hooks/use-cur-section';
 
 export default function HomeSection() {
   const router = useRouter();
@@ -63,11 +62,11 @@ export default function HomeSection() {
           >
             See My Work
           </Button>
-          {data.home.cvLink && (
+          {/*data.home.cvLink && (
             <Button asChild className='bg-muted-foreground/5' variant='ghost'>
               <Link href={data.home.cvLink}>Contact Me</Link>
             </Button>
-          )}
+          )} */}
         </div>
       </div>
 

@@ -13,9 +13,9 @@ const Technologies = dynamic(
   () => import('@/components/sections/technologies'),
   { ssr: false }
 );
-const ContactSection = dynamic(() => import('@/components/sections/contact'), {
-  ssr: false,
-});
+// const ContactSection = dynamic(() => import('@/components/sections/contact'), {
+//   ssr: false,
+// });
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <Technologies />
-      <ContactSection />
+      {/* <ContactSection /> */}
     </>
   );
 }

@@ -1,9 +1,9 @@
 'use client';
 import useCurSection from '@/hooks/use-cur-section';
+import agakadela from '@/public/imgs/agakadela_mini.webp';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
-import { motion } from 'framer-motion';
-import agakadela from '@/public/imgs/agakadela_mini.webp';
 
 export default function AboutSection() {
   const ref = useRef(null);

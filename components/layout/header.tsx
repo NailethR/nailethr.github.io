@@ -1,10 +1,10 @@
 'use client';
 import useHash from '@/hooks/use-hash';
 import { cn } from '@/lib/utils';
-import { File, Home, LucideSend, User } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
 import logo from '@/public/imgs/logo.webp';
+import { File, Home, User } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const navItems = [
   {
@@ -25,13 +25,13 @@ const navItems = [
     path: '#projects',
     icon: File,
   },
-  {
-    id: 4,
-    name: 'Contact-Me.tsx',
-    path: '#contact',
-    icon: LucideSend,
-    isRight: true,
-  },
+  // {
+  //   id: 4,
+  //   name: 'Contact-Me.tsx',
+  //   path: '#contact',
+  //   icon: LucideSend,
+  //   isRight: true,
+  // },
 ];
 
 export default function Header() {
